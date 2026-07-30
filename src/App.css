@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'race';
+    src: url('public/fonts/UncialAntiqua-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tecno';
+    src: url('public/fonts/Orbitron-ExtraBold.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    /* Certifique-se de que a extensão da imagem (png ou jpg) corresponde ao arquivo real na pasta */
+    background-image: url('public/images/fundo.png'); 
+    background-size: cover; /* Evita distorção da imagem, preenchendo toda a tela */
+    background-attachment: scroll; /* Faz a imagem rolar naturalmente com a página */
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: #e0f7fa; /* Texto em tom de ciano muito claro */
+    font-family: 'tecno', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+h1, .logo a {
+    font-family: 'race', Times, serif;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: normal;
+    position: relative;
+    color: #ffffff;
+    /* Mistura de brilho ciano e roxo para combinar com a aurora */
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.8), 0 0 20px rgba(157, 78, 221, 0.6); 
+}
+
+p {
+    font-size: medium;
+    font-weight: normal;
+}
+
+.title {
+    padding-top: 100px;
+}
+
+.corner-text {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(10, 5, 30, 0.7); /* Fundo azul/roxo bem escuro e translúcido */
+    border: 1px solid rgba(157, 78, 221, 0.5); /* Borda roxa néon */
+    border-radius: 10px;
+    color: #b2ebf2; /* Ciano claro */
+    text-align: center;
+    position: relative;
+    padding: 15px;
+    line-height: 1.5;
+    margin-bottom: 122px;
+    box-shadow: 0 0 20px rgba(157, 78, 221, 0.2);
+}
+
+.content-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.content-img img {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00e5ff; /* Borda ciano vibrante */
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.6), 0 0 40px rgba(157, 78, 221, 0.4); /* Brilho duplo na foto */
+}
+
+.banner-text {
+    text-align: left;
+    max-width: 500px;
+}
+
+.content-header {
+    background-color: rgba(10, 5, 30, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: 2px solid #9d4edd; /* Linha de divisão roxa néon */
+    box-shadow: 0 4px 15px rgba(157, 78, 221, 0.3);
+}
+
+.content-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.content-header header .logo a {
+    font-size: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0 0 10px #00e5ff, 0 0 20px #9d4edd;
+}
+
+.content-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.content-header header nav ul li a {
+    color: #81d4fa;
+    margin: 0 30px;
+    padding: 5px;
+    transition: 0.5s;
+    font-family: 'race';
+    text-decoration: none;
+}
+
+.content-header header nav ul li a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px #00e5ff, 0 0 15px #9d4edd;
+}
+
+.nav-responsive {
+    background-color: rgba(157, 78, 221, 0.2);
+    color: #00e5ff;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    display: grid;
+    min-height: 100vh;
+    align-items: center;
+    background-color: rgba(10, 5, 30, 0.5); /* Mais transparente para ver a aurora ao fundo */
+    backdrop-filter: blur(2px); /* Borrão suave, efeito de vidro */
+    color: #e0f7fa;
+    text-align: center;
+    padding: 30px;
+    transition: all 1s;
+}
+
+.hidden-section {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project {
+    background-color: rgba(15, 10, 40, 0.85);
+    border: 1px solid #1c2476;
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+.project:hover {
+    box-shadow: 0 0 20px rgba(2, 9, 212, 0.48);
+    transform: translateY(-5px); /* Efeito de elevação nos projetos */
+    border-color: #080c8d;
+}
+
+.fim {
+    background-color: rgba(10, 5, 30, 0.95);
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    border-top: 2px solid #9d4edd;
+    border-radius: 10px 10px 0 0;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.socialmedia a {
+    color: #81d4fa;
+    margin: 0 10px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.socialmedia a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00e5ff, 0 0 15px #9d4edd;
+}
+
+.socialmedia a:visited {
+    color: rgba(165, 165, 190, 0.8);
+}
