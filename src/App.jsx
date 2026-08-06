@@ -57,10 +57,9 @@ function App() {
 
     return (
         <>
-            <audio ref={audioRef} loop>
-                <source src="/public/musics/Lullaby.mp3" type="audio/mp3" />
+           <audio ref={audioRef} loop>
+    <source src={`${import.meta.env.BASE_URL}musics/Lullaby.mp3`} type="audio/mp3" />
             </audio>
-
             {/* TELA DE ENTRADA (SPLASH SCREEN) */}
             {!hasEntered && (
                 <div className="splash-screen">
