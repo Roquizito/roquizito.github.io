@@ -14,21 +14,21 @@
 
 @font-face {
     font-family: 'race';
-    src: url('public/fonts/UncialAntiqua-Regular.ttf') format('truetype');
+    src: url('/fonts/UncialAntiqua-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'tecno';
-    src: url('public/fonts/Orbitron-ExtraBold.ttf') format('opentype');
+    src: url('/fonts/Orbitron-ExtraBold.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
     position: relative;
-    background-image: url('public/images/fundo.png'); 
+    background-image: url('/images/fundo.png'); 
     background-size: cover;
     background-attachment: scroll; 
     background-repeat: no-repeat;
@@ -389,7 +389,7 @@ a.project span {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('public/images/fundo.png');
+    background-image: url('/images/fundo.png');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

@@ -7,7 +7,7 @@ export default function Hero() {
                 
                 <div className="profile-group">
                     <div className="content-img">
-                        <img src="public/images/Roque_Perfil.png" alt="ROQUE's image" width="300" height="300" />
+                       <img src="/images/Roque_Perfil.png" alt="ROQUE's image" width="300" height="300" />
                     </div>
                     <h2 className="profile-name">ROQUE CRISÓSTOMO</h2>
                 </div>
